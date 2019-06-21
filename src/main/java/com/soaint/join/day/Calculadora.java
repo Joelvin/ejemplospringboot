@@ -16,5 +16,13 @@ public class Calculadora {
 		return valor1 + valor2;
 		
 	}
+    
+    @GetMapping("/multiplicar")
+	public int multiplicar(@RequestParam(name="valor1") int valor1, @RequestParam("Valor2") int valor2 ) {
+		
+		
+		return valor1 + valor2;
+		
+	}
 
 }

@@ -12,7 +12,7 @@ public class Calculadora {
     @GetMapping("/sumar")
 	public int sumar(@RequestParam(name="valor1") int valor1, @RequestParam("Valor2") int valor2 ) {
 		
-		
+		System.out.println(".::Operacion sumar !::.");
 		return valor1 + valor2;
 		
 	}
@@ -20,7 +20,7 @@ public class Calculadora {
     @GetMapping("/multiplicar")
 	public int multiplicar(@RequestParam(name="valor1") int valor1, @RequestParam("Valor2") int valor2 ) {
 		
-		
+		System.out.println(".::Operacion multiplicar !::.");
 		return valor1 * valor2;
 		
 	}
